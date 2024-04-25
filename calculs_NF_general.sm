@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="0.99.6884.37264"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings dpi="96">
+    <identity>
+      <id>13737bae-919d-42cf-8f8c-23ddd83275f8</id>
+      <revision>13</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="9" orientation="Portrait" width="827" height="1169" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="0.99.6884.37264" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.99.6884.37264" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="PictureRegion" version="1.10.6884.37264" guid="06b5df04-393e-4be7-9107-305196fcb861" />
+      <assembly name="TextRegion" version="1.11.6884.37264" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region id="0" left="135" top="63" width="446" height="60" color="#000000" bgColor="#ffffff" fontSize="16">
+      <text lang="eng">
+        <p>Formules de calcul du bruit d'un élément RF VS son gain et son NF</p>
+      </text>
+    </region>
+    <region id="1" left="9" top="225" width="727" height="167" color="#000000" bgColor="#ffffff">
+      <picture>
+        <raw format="png" encoding="base64">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</raw>
+      </picture>
+    </region>
+    <region id="2" left="27" top="396" width="76" height="24" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="3" left="117" top="423" width="444" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Calcul Bruit de sortie d'un élément à partir du gain, du facteur de bruit, et bruit d'entrée</p>
+      </text>
+    </region>
+    <region id="4" left="18" top="486" width="146" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">IN.noise</e>
+          <e type="operand">174</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="5" left="216" top="495" width="158" height="31" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">G.element</e>
+          <e type="operand">10.6</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="6" left="387" top="495" width="142" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">NF.element</e>
+          <e type="operand">14.1</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="7" left="0" top="558" width="702" height="80" color="#000000" bgColor="#ffffff" fontSize="8">
+      <math>
+        <input>
+          <e type="operand">OUT.noise</e>
+          <e type="operand">10</e>
+          <e type="operand">10</e>
+          <e type="operand">IN.noise</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">G.element</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">10</e>
+          <e type="operand">174</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">G.element</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">10</e>
+          <e type="operand">174</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">G.element</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">NF.element</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">10</e>
+          <e type="function" args="2">log</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">170.5</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region id="8" left="135" top="675" width="444" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Calcul Bruit en entrée d'un élément à partir du gain, du facteur de bruit, et du bruit de sortie</p>
+      </text>
+    </region>
+    <region id="9" left="36" top="756" width="178" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">OUT.noise</e>
+          <e type="operand">172.24</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="10" left="234" top="765" width="158" height="31" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">G.element</e>
+          <e type="operand">1.18</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="11" left="459" top="765" width="142" height="30" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">NF.element</e>
+          <e type="operand">1.18</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="12" left="36" top="828" width="605" height="158" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">IN.noise</e>
+          <e type="operand">10</e>
+          <e type="operand">10</e>
+          <e type="operand">OUT.noise</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">10</e>
+          <e type="operand">G.element</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">1</e>
+          <e type="operand">10</e>
+          <e type="operand">NF.element</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">10</e>
+          <e type="operand">174</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">10</e>
+          <e type="function" args="2">log</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">171.8102</e>
+          <e type="operator" args="1">-</e>
+        </result>
+      </math>
+    </region>
+    <region id="13" left="108" top="1107" width="516" height="40" color="#000000" bgColor="#ffffff" fontSize="10">
+      <text lang="eng">
+        <p>Calcul du NF d'un élément à partir du gain, du bruit en entrée et du bruit en sortie</p>
+      </text>
+    </region>
+    <region id="14" left="18" top="1206" width="146" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">IN.noise</e>
+          <e type="operand">174</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="15" left="207" top="1206" width="178" height="41" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">OUT.noise</e>
+          <e type="operand">171.81</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="16" left="423" top="1215" width="158" height="31" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">G.element</e>
+          <e type="operand">10.6</e>
+          <e type="operator" args="1">-</e>
+          <e type="bracket">(</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region id="17" left="18" top="1296" width="627" height="160" color="#000000" bgColor="#ffffff" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">NF.element</e>
+          <e type="operand">10</e>
+          <e type="operand">10</e>
+          <e type="operand">OUT.noise</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">10</e>
+          <e type="operand">G.element</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">10</e>
+          <e type="operand">IN.noise</e>
+          <e type="operand" style="unit">dBm</e>
+          <e type="operand" style="unit">Hz</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">10</e>
+          <e type="operand">174</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">10</e>
+          <e type="operand">174</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">G.element</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">10</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">/</e>
+          <e type="operand">10</e>
+          <e type="function" args="2">log</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">12.79</e>
+          <e type="operand" style="unit">dB</e>
+          <e type="operator" args="2">*</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
